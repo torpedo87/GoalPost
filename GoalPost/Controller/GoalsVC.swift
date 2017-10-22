@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class GoalsVC: UIViewController {
   
@@ -14,6 +15,8 @@ class GoalsVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    
   }
   
   @IBAction func addGoalBtnPressed(_ sender: Any) {
