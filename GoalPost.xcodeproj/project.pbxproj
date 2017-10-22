@@ -15,6 +15,7 @@
 		48121FDC1F9C25EA0088DFB3 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48121FDB1F9C25EA0088DFB3 /* GoalsVC.swift */; };
 		48121FDE1F9C304A0088DFB3 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48121FDD1F9C304A0088DFB3 /* GoalCell.swift */; };
 		48121FE01F9C3F530088DFB3 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48121FDF1F9C3F530088DFB3 /* GoalType.swift */; };
+		48121FE21F9C48CB0088DFB3 /* CreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48121FE11F9C48CB0088DFB3 /* CreateVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		48121FDB1F9C25EA0088DFB3 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		48121FDD1F9C304A0088DFB3 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		48121FDF1F9C3F530088DFB3 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		48121FE11F9C48CB0088DFB3 /* CreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				48121FDB1F9C25EA0088DFB3 /* GoalsVC.swift */,
+				48121FE11F9C48CB0088DFB3 /* CreateVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				48121FE01F9C3F530088DFB3 /* GoalType.swift in Sources */,
 				48121FDC1F9C25EA0088DFB3 /* GoalsVC.swift in Sources */,
 				48121FC31F9C23590088DFB3 /* AppDelegate.swift in Sources */,
+				48121FE21F9C48CB0088DFB3 /* CreateVC.swift in Sources */,
 				48121FCB1F9C23590088DFB3 /* GoalPost.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
