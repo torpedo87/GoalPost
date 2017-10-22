@@ -21,6 +21,8 @@ class GoalsVC: UIViewController {
   }
   
   @IBAction func addGoalBtnPressed(_ sender: Any) {
+    guard let createVC = storyboard?.instantiateViewController(withIdentifier: "CreateVC") else { return }
+    presentDetail(createVC)
   }
 }
 
@@ -38,7 +40,8 @@ extension GoalsVC: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: "goalCell") as? GoalCell else {
+    
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "GoalsCell") as? GoalsCell else {
       return UITableViewCell()
     }
     cell.configureCell(description: "eat salad twice a week", type: .longTerm, goalProgress: 3)

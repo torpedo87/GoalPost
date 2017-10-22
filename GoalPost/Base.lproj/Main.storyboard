@@ -25,7 +25,7 @@
         <!--GoalsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GoalsVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalsVC" id="BYZ-38-t0r" customClass="GoalsVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="goalCell" rowHeight="70" id="mgt-dA-WPY" customClass="GoalCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GoalsCell" rowHeight="70" id="mgt-dA-WPY" customClass="GoalsCell" customModule="GoalPost" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mgt-dA-WPY" id="QUo-JR-2Xm">
@@ -155,9 +155,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="goalDescriptionLabel" destination="Zc3-bW-BGC" id="sJd-d4-LMr"/>
-                                            <outlet property="goalProgressLabel" destination="LXj-OE-XCG" id="7ON-dW-BHk"/>
-                                            <outlet property="goalTypeLabel" destination="Usd-nW-Oi9" id="ZYW-Zz-Yqu"/>
+                                            <outlet property="descriptionLabel" destination="Zc3-bW-BGC" id="c2q-2V-CJw"/>
+                                            <outlet property="progressLabel" destination="LXj-OE-XCG" id="8aB-gz-J4L"/>
+                                            <outlet property="typeLabel" destination="trQ-eX-WfO" id="VNZ-gI-m22"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -188,7 +188,7 @@
         <!--CreateVC-->
         <scene sceneID="Sga-34-K2z">
             <objects>
-                <viewController id="CR0-CZ-PEi" customClass="CreateVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateVC" id="CR0-CZ-PEi" customClass="CreateVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="87p-Xm-eUU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
