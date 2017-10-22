@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class FinishGoalVC: UIViewController, UITextFieldDelegate {
   
@@ -26,8 +27,37 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
     self.goalType = type
   }
   
+  //core data 에 저장하기
+  func save(completion: (_ finished: Bool) -> ()) {
+    guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+    
+    let goal = Goal(context: managedContext)
+    goal.goalDescription = self.goalDescription
+    goal.goalType = self.goalType.rawValue
+    goal.goalCompletionValue = Int32(self.pointsTextField.text!)!
+    goal.goalProgress = Int32(0)
+    
+    do {
+      try managedContext.save()
+      completion(true)
+    } catch {
+      completion(false)
+      debugPrint("could not save: \(error.localizedDescription)")
+    }
+    
+  }
+  
+  @IBAction func backBtnPressed(_ sender: Any) {
+    dismissDetail()
+  }
   
   @IBAction func createGoalBtnPressed(_ sender: Any) {
-    
+    if pointsTextField.text != "" {
+      save { (success) in
+        if success {
+          dismiss(animated: true, completion: nil)
+        }
+      }
+    }
   }
 }

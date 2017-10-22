@@ -217,6 +217,7 @@
                                         <rect key="frame" x="15" y="33" width="14" height="25"/>
                                         <state key="normal" image="back"/>
                                         <connections>
+                                            <action selector="backBtnPressed:" destination="Qpu-Zq-4N4" eventType="touchUpInside" id="8Tp-V6-gQ0"/>
                                             <action selector="backBtnPressed:" destination="CR0-CZ-PEi" eventType="touchUpInside" id="ieZ-SD-QKc"/>
                                         </connections>
                                     </button>
@@ -318,6 +319,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlr-1d-PgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Qpu-Zq-4N4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="940" y="132.68365817091455"/>
         </scene>
