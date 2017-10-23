@@ -149,6 +149,22 @@
                                                     <color key="textColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RfI-aI-NA7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal Complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFW-ma-kSW">
+                                                            <rect key="frame" x="81" y="16.5" width="213.5" height="36"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="aFW-ma-kSW" firstAttribute="centerY" secondItem="RfI-aI-NA7" secondAttribute="centerY" id="UT1-53-ev4"/>
+                                                        <constraint firstItem="aFW-ma-kSW" firstAttribute="centerX" secondItem="RfI-aI-NA7" secondAttribute="centerX" id="i2x-C9-bS4"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="JrS-xZ-hso" secondAttribute="bottom" id="1TD-Vi-Dhv"/>
@@ -156,11 +172,16 @@
                                                 <constraint firstItem="LXj-OE-XCG" firstAttribute="leading" secondItem="JrS-xZ-hso" secondAttribute="trailing" constant="10" id="JOY-IW-MAd"/>
                                                 <constraint firstItem="JrS-xZ-hso" firstAttribute="top" secondItem="QUo-JR-2Xm" secondAttribute="topMargin" id="X76-PN-Mqo"/>
                                                 <constraint firstItem="LXj-OE-XCG" firstAttribute="top" secondItem="QUo-JR-2Xm" secondAttribute="topMargin" constant="8" id="fZv-nI-4v1"/>
+                                                <constraint firstAttribute="trailing" secondItem="RfI-aI-NA7" secondAttribute="trailing" id="gJm-ud-D84"/>
+                                                <constraint firstItem="RfI-aI-NA7" firstAttribute="top" secondItem="QUo-JR-2Xm" secondAttribute="top" id="geB-Ia-0kL"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="LXj-OE-XCG" secondAttribute="trailing" constant="8" id="jm4-qt-IK8"/>
+                                                <constraint firstAttribute="bottom" secondItem="RfI-aI-NA7" secondAttribute="bottom" id="nuI-MV-8xq"/>
+                                                <constraint firstItem="RfI-aI-NA7" firstAttribute="leading" secondItem="QUo-JR-2Xm" secondAttribute="leading" id="s3x-R9-DXH"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="LXj-OE-XCG" secondAttribute="bottom" constant="8" id="u3f-HR-XMY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="RfI-aI-NA7" id="IW4-mY-590"/>
                                             <outlet property="descriptionLabel" destination="Zc3-bW-BGC" id="c2q-2V-CJw"/>
                                             <outlet property="progressLabel" destination="LXj-OE-XCG" id="8aB-gz-J4L"/>
                                             <outlet property="typeLabel" destination="Usd-nW-Oi9" id="WJA-jp-aQ2"/>
