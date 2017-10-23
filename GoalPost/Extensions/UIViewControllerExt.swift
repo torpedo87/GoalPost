@@ -30,4 +30,20 @@ extension UIViewController {
     
     dismiss(animated: false, completion: nil)
   }
+  
+  func presentSecondaryDetail(_ viewControllerToPresent: UIViewController) {
+    let transition = CATransition()
+    transition.duration = 0.3
+    transition.type = kCATransitionPush
+    transition.subtype = kCATransitionFromRight
+    
+    //presentedVC = CreateVC
+    guard let presentedViewController = presentedViewController else { return }
+    
+    //현재 뷰컨트롤러가 dismiss 되고나서 곧바로 다음 뷰로 이동
+    presentedViewController.dismiss(animated: false) {
+      self.view.window?.layer.add(transition, forKey: kCATransition)
+      self.present(viewControllerToPresent, animated: false, completion: nil)
+    }
+  }
 }

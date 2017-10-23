@@ -42,7 +42,10 @@ class CreateVC: UIViewController {
       guard let finishGoalVC = storyboard?.instantiateViewController(withIdentifier: "FinishGoalVC") as? FinishGoalVC else { return }
       
       finishGoalVC.initData(description: goalTextView.text, type: goalType)
-      presentDetail(finishGoalVC)
+      
+      //presentingVC = GoalsVC
+      //GoalsVC가 CreateVC를 닫고 FinishGoalVC를 연다
+      presentingViewController?.presentSecondaryDetail(finishGoalVC)
     }
   }
 }
