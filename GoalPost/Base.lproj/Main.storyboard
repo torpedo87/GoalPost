@@ -163,7 +163,7 @@
                                         <connections>
                                             <outlet property="descriptionLabel" destination="Zc3-bW-BGC" id="c2q-2V-CJw"/>
                                             <outlet property="progressLabel" destination="LXj-OE-XCG" id="8aB-gz-J4L"/>
-                                            <outlet property="typeLabel" destination="trQ-eX-WfO" id="VNZ-gI-m22"/>
+                                            <outlet property="typeLabel" destination="Usd-nW-Oi9" id="WJA-jp-aQ2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
